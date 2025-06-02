@@ -20,7 +20,7 @@ const Weather = () => {
 
      const search = async (searchValue)=> {
           try {
-               const apikey = 'd1077988b8ea4e12927192044241607';
+               const apikey = import.meta.env.VITE_WEATHER_API_KEY;
                const url = `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${searchValue}`;
                const response = await fetch(url);
                const data = await response.json();
@@ -42,7 +42,7 @@ const Weather = () => {
          
      const search2 = async (searchValue)=> {
           try {
-               const apikey = 'd1077988b8ea4e12927192044241607';
+               const apikey = import.meta.env.VITE_WEATHER_API_KEY;
                const url2 = `https://api.weatherapi.com/v1/astronomy.json?key=${apikey}&q=${searchValue}`;
                const response2 = await fetch(url2);
                const data2 = await response2.json();
