@@ -106,9 +106,6 @@ const Weather = () => {
 
   return (
     <div className={`weather ${theme} ${background}`}>
-      <button className="theme-toggle" onClick={toggleTheme}>
-        Toggle {theme === 'light' ? 'Dark' : 'Light'} Mode
-      </button>
 
       <div className="search-bar">
         <input
