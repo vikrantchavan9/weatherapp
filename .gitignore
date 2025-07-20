@@ -1,0 +1,39 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist # <--- VERY IMPORTANT FOR VITE - don't commit your built app!
+
+# misc
+.DS_Store
+.env.local
+.env.*.local
+.npmrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore asset dumps or backups
+*.bak
+*.tmp
+
+# Parcel/Other
+.cache/
+
+# Optional: If using Linux or macOS lock files
+*.lock
